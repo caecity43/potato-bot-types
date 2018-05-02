@@ -1,11 +1,11 @@
-RSpec.describe Telegram::Bot::Types::Response do
+RSpec.describe Potato::Bot::Types::Response do
   it 'has WRAPPED_METHODS' do
     expect(described_class::WRAPPED_METHODS).to be_instance_of(Hash)
   end
 
   describe '.wrap' do
     subject { described_class.wrap(object, type) }
-    let(:type) { Telegram::Bot::Types::File }
+    let(:type) { Potato::Bot::Types::File }
     let(:object) { {'file_id' => 'file_1'} }
 
     it { should be_instance_of(type) }

@@ -5,7 +5,7 @@ require 'rspec/its'
 GEM_ROOT = Pathname.new File.expand_path('../..', __FILE__)
 
 $LOAD_PATH.unshift GEM_ROOT.join('lib')
-require 'telegram/bot/types'
+require 'potato/bot/types'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

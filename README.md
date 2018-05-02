@@ -1,16 +1,16 @@
-# Telegram::Bot::Types
+# Potato::Bot::Types
 
-Virtus types for Telegram Bot API.
+Virtus types for Potato Bot API.
 
-[![Gem Version](https://badge.fury.io/rb/telegram-bot-types.svg)](http://badge.fury.io/rb/telegram-bot-types)
-[![Build Status](https://travis-ci.org/telegram-bot-rb/telegram-bot-types.svg)](https://travis-ci.org/telegram-bot-rb/telegram-bot-types)
+[![Gem Version](https://badge.fury.io/rb/potato-bot-types.svg)](http://badge.fury.io/rb/potato-bot-types)
+[![Build Status](https://travis-ci.org/potato-bot-rb/potato-bot-types.svg)](https://travis-ci.org/potato-bot-rb/potato-bot-types)
 
 ## Installation
 
 Add following line to your Gemfile:
 
 ```ruby
-gem 'telegram-bot-types'
+gem 'potato-bot-types'
 ```
 
 And then execute:
@@ -22,14 +22,14 @@ $ bundle
 Or install it system-wide:
 
 ```shell
-$ gem install telegram-bot-types
+$ gem install potato-bot-types
 ```
 
 ## Usage
 
 ```ruby
 updates = bot.get_updates.map do |x|
-  Telegram::Bot::Types::Update.new(x)
+  Potato::Bot::Types::Update.new(x)
 end
 ```
 
